@@ -1,0 +1,712 @@
+* {margin: 0}
+
+html {padding: 0; margin: 0; width: 100%; height: 100%;}
+body {background-color: white; width: 100%; height: 100%;
+font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Arial",sans-serif; font-weight: normal; font-style: normal; margin: 0}
+
+.document-wrap {display: flex; flex-direction: column; min-height: 100%; height: 100%}
+
+.header-wrap {position: absolute; z-index: 9999999999; height: 40px; background-color: black; flex: 0 0 auto; display: flex; align-items: center; justify-content: flex-start; width: 100%;}
+
+.header {z-index: 99999999999; height: 40px; background-color: black; display: flex; align-items: center; justify-content: center; width: 100%;}
+
+.menu__button {z-index: 1; position: absolute; color: white; font-size: 20px; font-weight: 900; padding-left: 15px; }
+
+.logo {z-index: 99999999999; width: 25px; height: 25px; padding-right: 25px; display: block; }
+
+
+
+
+/*  МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ   */
+
+
+
+.menu {
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  width:100%;
+  height: 40px;
+  position: relative;
+}
+
+.submenu {
+  position: relative;
+  list-style: none;
+  top: -1000%;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #616161;
+  z-index: 99;
+
+ -moz-transition: all 400ms;
+ -webkit-transition: all 400ms;
+ transition: all 400ms;
+}
+
+.submenu.submenu__active {
+  top: 100%;
+}
+
+.subsubmenu__first.subsubmenu__active {
+top: 0%;
+-moz-transition: all 500ms;
+-webkit-transition: all 500ms;
+transition: all 500ms;
+
+}
+
+.subsubmenu__second.subsubmenu__active {
+  top: 0%;
+  -moz-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.subsubmenu__third.subsubmenu__active {
+  top: 0%;
+  -moz-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+
+.submenu__link {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  background-color: #616161;
+  white-space: nowrap;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-around;
+  margin: 2.3% 0 0 0;
+  list-style: none;
+  z-index: 99;
+}
+
+
+.submenu__item {width: 100%; z-index: 99;}
+
+
+.subsubmenu__link {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  background-color: #616161;
+  white-space: nowrap;
+  padding: 4% 0% 2% 0;
+  flex-direction: сolumn;
+  position: relative;
+  list-style: none;
+  z-index: 0;
+
+  width: inherit;
+  justify-content: center;
+}
+
+
+ul {
+list-style: none;
+padding-left: 0
+}
+
+
+.subsubmenu {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  width: inherit;
+  display: flex;
+  z-index: 0;
+  list-style: none;
+  top: -8000%;
+  padding-left: 0px;
+  list-style: none;
+
+  -moz-transition: all 400ms;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+
+.submenu__title {font-weight: 600; font-size: 110%; z-index: 99;}
+
+  .submenu__title:hover {
+    -moz-text-shadow:0 0 8px #FFFFFF;
+    -webkit-text-shadow:0 0 8px #FFFFFF;
+    text-shadow:0 0 8px #FFFFFF;
+  }
+
+  .submenu__title:hover {
+    -moz-text-shadow:0 0 15px #FFFFFF;
+    -webkit-text-shadow:0 0 15px #FFFFFF;
+    text-shadow:0 0 15px #FFFFFF;
+  }
+
+  .subsubmenu__title:hover {
+    -moz-text-shadow:0 0 15px #FFFFFF;
+    -webkit-text-shadow:0 0 15px #FFFFFF;
+    text-shadow:0 0 15px #FFFFFF;
+  }
+
+  .menu__button:hover {-moz-text-shadow:0 0 10px #FFFFFF;
+    -webkit-text-shadow:0 0 10px #FFFFFF;
+    text-shadow:0 0 10px #FFFFFF;
+  }
+
+/*  МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ  */
+.contentMobile {display: none}
+
+.content {flex: 1 0 auto;}
+
+.shapka_iphone11 {width: 100%; display: inline-block; padding-bottom: 1%; height: 2.5%; background-color: white; color: #111111; z-index: 3;}
+
+.label_in_shapka {padding: 1% 0 0 9%; display: inline-block; color: #111111; font-weight: 600; font-size: 150%; z-index: 3;}
+
+
+
+.free_shipping {
+
+  transform: translateY(-200%);
+  transition: 0.9s linear;
+  background-color: #0070C9;
+  margin: 0 0 0% 0;
+  width: 100%;
+  height: 1.7%;
+  display: flex;
+  position: relative;
+  z-index: -1;
+  
+}
+
+.label_in_freeShipping {display: inline; margin: 0 auto; color: white; padding: 0.5% 0 0.5% 0; font-size: 12px; font-weight: 400; }
+
+.free_shipping.active5 {
+  transform: translateY(0%);
+}
+
+
+
+
+.contentGrid {display: grid; grid-template-columns: 50% 50%}
+
+.imageIphone11 {padding: 0% 0 0% 0%;  }
+.buyOptions {margin-bottom: 0%} /*костыль для того чтобы был отступ снизу от блока с опциями, потом надо исправить*/
+
+.imgIphone11AllColors {width: 70%; height: 55%; padding-left: 20%;}
+.imgIphone11White {display: none; width: 80%; height: 60%; padding-left: 15%;}
+.imgIphone11Black {display: none; width: 80%; height: 60%; padding-left: 15%;}
+.imgIphone11Green {display: none; width: 80%; height: 60%; padding-left: 15%;}
+.imgIphone11Yellow {display: none; width: 80%; height: 60%; padding-left: 15%;}
+.imgIphone11Purple {display: none; width: 80%; height: 60%; padding-left: 15%;}
+.imgIphone11Red {display: none; width: 80%; height: 60%; padding-left: 15%;}
+
+.wrapperBuyIphone {margin: 10% 0 0 10%}
+.buyIphoneHead {padding-top: 0%}
+.buyIphoneLabel {font-size: 40px; font-weight: 600;}
+
+
+.labelsForBlockBuyOptions {font-weight: 600; font-size: 17px; color: #333333;}
+
+.Iphone11Name {font-size: 120%; font-weight: 600}
+.displayIphone {font-size: 12px}
+
+.wrapperForLabelFrom {position: absolute;  padding-left: 10%}
+.labelFrom {font-size: 17px; float: right; display: block;}
+
+
+.selectColor {display: grid; grid-template-columns: 50% 50%; grid-row-gap: 1em;  width: 80%; height: 110%; text-align: center; margin-top: 2%}
+.colorBlock {border-radius: 5px; border: 1px solid #d6d6d6; padding: 15px; width: 70%; height: 70%}
+.colorBlock:hover {cursor: pointer;}
+.circleColorWhite {border-radius: 50%; background-color: #f9f6ef; width: 35px; height: 35px; margin: 0 auto;}
+.circleColorBlack {border-radius: 50%; background-color: #1f2120; width: 35px; height: 35px; margin: 0 auto;}
+.circleColorGreen {border-radius: 50%; background-color: #6d7a71; width: 35px; height: 35px; margin: 0 auto;}
+.circleColorYellow {border-radius: 50%; background-color: #ffe681; width: 35px; height: 35px; margin: 0 auto;}
+.circleColorPurple {border-radius: 50%; background-color: #d1cddb; width: 35px; height: 35px; margin: 0 auto;}
+.circleColorRed {border-radius: 50%; background-color: #ba0c2f; width: 35px; height: 35px; margin: 0 auto;}
+.labelForCircle {font-size: 12px; color: #333333; display: inline-block; margin-top: 10px}
+.circleColorSpaceGrey {border-radius: 50%; background-color: #52514f;}
+
+
+.memory64 {border-radius: 50%; width: 50%; height: 30%; margin: 0 auto;}
+.memory128 {border-radius: 50%; width: 50%; height: 30%; margin: 0 auto;}
+.memory256 {border-radius: 50%; width: 50%; height: 30%; margin: 0 auto;}
+.labelForMemory {font-size: 12px; color: #333333; display: inline-block; margin-top: 30px}
+.memory {font-size: 170%}
+.gb {font-weight: 600}
+
+
+
+
+.wrapForBlockPrice {background-color: #e7e7e7; width: 50%; height: 100%; margin: 5% 0 15% 0; padding: 10%}
+.BlockWithPrice {height: 100%;}
+.buttonAddToBasket {border-radius: 5px; background-color: #0f7bd1; width: 100%; padding: 4px 15px}
+.buttonAddToBasket:hover {cursor: pointer;}
+.labelAddToBasket {color: #f1ffff; font-size: 17px;}
+.resultUnderOptions {font-weight: 600%; font-size: 150%}
+
+.blockUnderPhoto {padding: 30px 0 0px 20%; display: grid; grid-template-columns: 50% 50%; width: 70%;}
+.labelFastAndFreeShipping {font-size: 12px; font-weight: 600; text-align: center; margin: 1% 0 0 0}
+
+.chatWithSpecialist {padding: 30px 0 30px 10%; display: grid; grid-template-columns: 25% 75%; width: 100%;}
+.labelQuestionsAndChat {margin-left: 5%}
+.linkChatWithSpecialist {color: #0070C9; text-decoration: none;}
+.linkChatWithSpecialist:hover {text-decoration: underline;}
+
+.active {border-color: #0070C9}
+
+
+.modelActive {border-color: #0f7bd1};
+
+.swiper-container {
+
+}
+
+.slide {width: 100%}
+
+.blockColorUnavailable {background-color: #f2f2f2; z-index: 99999999999; opacity: 0.3; padding: 10% 10% 10% 10%; width: inherit; border-radius: 20px; padding: 0 0 0 1%}
+.blockMemoryUnavailable {background-color: #f2f2f2; z-index: 99999999999; opacity: 0.3; padding: 10% 10% 10% 10%; width: inherit; border-radius: 20px; padding: 0 0 0 2%}
+.blockCartUnavailable {background-color: #f2f2f2; z-index: 99999999999; opacity: 0.3; padding: 10% 10% 10% 10%; width: inherit; border-radius: 20px; padding: 0 0 0 2%}
+/*  КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  FOOTER    FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER  */
+
+
+.contentFooter {}
+
+.footer__wrap {display: grid; grid-gap: 3em}
+
+
+.footer-column__first {
+   grid-column-start: 1;
+   grid-column-end: 2
+}
+
+.footer-column__second {
+   grid-column: 2/3
+}
+
+.footer-column__third {
+   grid-column: 3/4
+}
+
+.footer-column__fourth {
+   grid-column: 4/5
+}
+
+.footer-column__fifth {
+   grid-column: 5/6
+}
+
+
+
+.footer__link:link {list-style: none; color: #86868b; text-decoration: none; font-size: 90%;}
+.footer__link:hover {list-style: none; color: #86868b; text-decoration: underline; font-size: 90%;}
+.footer__link:visited {list-style: none; color: #86868b; text-decoration: none; font-size: 90%;}
+
+.footer__item {margin: 0 0 5% 0}
+
+.footer__item__last-item {margin: 0 0 20% 0}
+
+.footer__item__last-item {margin: 0 0 20% 0}
+
+.footer__item__last-item {margin: 0 0 20% 0}
+
+.footer-title {list-style: none; color: #86868b; font-weight: 600; font-size: 90%; margin: 0% 0 10% 0 }
+
+
+.footer-label {color: #86868b; font-size: 90%;}
+
+
+.footer__link__blue:link {color: #06c; text-decoration: none}
+
+.footer__link__blue:hover {color: #06c; text-decoration: underline;}
+
+.footer__link__blue:visited {color: #06c; text-decoration: none}
+
+
+
+.footer-row {display: flex; flex-direction: row;}
+
+.footer-row__item {list-style: none; color: #86868b; font-size: 90%;}
+
+.footer-row__link:link {text-decoration: none; color: #86868b;}
+.footer-row__link:hover {text-decoration: underline; color: #86868b;}
+.footer-row__link:visited {text-decoration: none; color: #86868b;}
+
+.footer-row__separator {margin: 0 10px 0 10px}
+
+.footer {background-color: #e4e4e4; height: 100%; flex: 0 0 auto; padding: 3% 6% 0% 6%;}
+
+.footer-mobile {display: none}
+
+/*  FOOTER    FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+  * {margin: 0}
+
+  html {padding: 0; margin: 0; width: 100%; height: 100%;}
+  body {background-color: white; width: 100%; height: 100%;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Arial",sans-serif; font-weight: normal; font-style: normal; margin: 0}
+  
+  .document-wrap {display: flex; flex-direction: column; min-height: 100%; height: 100%}
+  
+  .header-wrap {position: absolute; z-index: 9999999999; height: 40px; background-color: black; flex: 0 0 auto; display: flex; align-items: center; justify-content: flex-start; width: 100%;}
+  
+  .header {z-index: 99999999999; height: 40px; background-color: black; display: flex; align-items: center; justify-content: center; width: 100%;}
+  
+  .menu__button {z-index: 1; position: absolute; color: white; font-size: 20px; font-weight: 900; padding-left: 15px; }
+  
+  .logo {z-index: 99999999999; width: 22px; height: 22px; padding-right: 25px; display: block; }
+  
+    
+
+/* MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE  */
+
+
+
+
+
+
+.submenu {
+  position: relative;
+  list-style: none;
+  top: -1000%;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  height: 20px;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #616161;
+  z-index: 99;
+ -moz-transition: all 400ms;
+ -webkit-transition: all 400ms;
+ transition: all 400ms;
+}
+
+
+
+  .submenu.active {
+    top: 100%;
+    padding: 0 0 0 0;
+  }
+
+  .subsubmenu {
+    position: relative;
+    z-index: -2;
+    flex-direction: column;
+    justify-content: center;
+    width: inherit;
+    display: flex;
+    list-style: none;
+    top: -1000%;
+    padding-left: 0px;
+    list-style: none;
+    -moz-transition: all 400ms;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+
+  .submenu__item {width: 100%}
+
+
+  .subsubmenu__first.active-subsubmenu {
+  top: 0%;
+  -moz-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+
+  }
+
+  .subsubmenu__second.active-subsubmenu {
+    top: 0%;
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+
+  .subsubmenu__third.active-subsubmenu {
+    top: 0%;
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+
+
+  .submenu__link {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    background-color: #616161;
+    white-space: nowrap;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    min-height: 50%;
+    margin: 0;
+    font-size: 80%;
+    list-style: none;
+  }
+
+  .subsubmenu__link {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    background-color: #616161;
+    white-space: nowrap;
+    padding: 15px 0% 10px 0;
+    margin: 0;
+    flex-direction: сolumn;
+    position: relative;
+    list-style: none;
+    font-size: 75%;
+    width: inherit;
+    justify-content: center;
+  }
+
+
+
+.submenu__title {padding: 5% 0 5% 0}
+
+/* MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE  */
+
+
+
+
+
+
+
+
+/* CONTENTmobile  CONTENTmobile   CONTENTmobile   CONTENTmobile   CONTENTmobile   CONTENTmobile   CONTENTmobile   CONTENTmobile */
+
+.content {display: none}
+.contentMobile {display: block; flex: 1 0 auto;}
+
+.shapka_iphone11Mobile {width: 100%; display: inline-block; padding-bottom: 0%; height: 2%; background-color: white; color: #111111; z-index: 3;}
+
+.label_in_shapkaMobile {padding: 2% 0 0 9%; display: inline-block; color: #111111; font-weight: 600; font-size: 130%; z-index: 3;}
+
+
+
+.free_shippingMobile {
+
+  transform: translateY(-100%);
+  transition: 0.7s linear;
+  background-color: #0070C9;
+  margin: 0 0 0% 0;
+  width: 100%;
+  height: 1.7%;
+  display: flex;
+  position: relative;
+  z-index: -1;
+  
+}
+
+.label_in_freeShippingMobile {display: inline; margin: 0 auto; color: white; padding: 0.5% 0 0.5% 0; font-size: 10px; font-weight: 400; text-align: center}
+
+.free_shippingMobile.activeMobile {
+  transform: translateY(0%);
+}
+
+
+
+
+
+
+
+.imageIphone11Mobile {padding: 0% 0 0% 0%; }
+.buyOptionsMobile {margin-bottom: 0%} /*костыль для того чтобы был отступ снизу от блока с опциями, потом надо исправить*/
+
+.imgIphone11AllColorsMobile {width: 100%; height: 50%}
+.imgIphone11WhiteMobile {display: none; width: 100%; height: 50%}
+.imgIphone11BlackMobile {display: none; width: 100%; height: 50%}
+.imgIphone11GreenMobile {display: none; width: 100%; height: 50%}
+.imgIphone11YellowMobile {display: none; width: 100%; height: 50%}
+.imgIphone11PurpleMobile {display: none; width: 100%; height: 50%;}
+.imgIphone11RedMobile {display: none; width: 100%; height: 50%;}
+
+
+.wrapperSelectModelMobile {margin: 5% 0 0 5%}
+.wrapperBuyIphoneMobile {margin: 10% 0 0 5%}
+.buyIphoneHeadMobile {padding: 0; margin: 0;}
+.buyIphoneLabelMobile {font-size: 30px; font-weight: 600; padding: 10% 0 0 5%; display: block}
+
+
+.labelsForBlockBuyOptionsMobile {font-weight: 600; font-size: 17px; color: #333333;}
+
+
+
+.displayIphoneMobile {font-size: 12px}
+
+.wrapperForLabelFrom {position: absolute;  padding-left: 10%}
+.labelFromMobile {font-size: 17px; float: right; display: block;}
+
+
+.selectColorMobile {display: grid; grid-template-columns: 50% 50%; grid-row-gap: 2em; grid-column-gap: 2em;  width: 80%; height: 110%; text-align: center; margin-top: 2%}
+.colorBlock {border-radius: 5px; border: 1px solid #d6d6d6; padding: 15px; width: 84%; height: 70%}
+.colorBlock:hover {cursor: pointer;}
+.circleColorWhiteMobile {border-radius: 50%; background-color: #f9f6ef; width: 35px; height: 35px; margin: 0 auto;}
+.circleColorBlackMobile {border-radius: 50%; background-color: black; width: 35px; height: 35px; margin: 0 auto;}
+.circleColorGreenMobile {border-radius: 50%; background-color: #6d7a71; width: 35px; height: 35px; margin: 0 auto;}
+.circleColorYellowMobile {border-radius: 50%; background-color: #ffe681; width: 35px; height: 35px; margin: 0 auto;}
+.circleColorPurpleMobile {border-radius: 50%; background-color: #d1cddb; width: 35px; height: 35px; margin: 0 auto;}
+.circleColorRedMobile {border-radius: 50%; background-color: #ba0c2f; width: 35px; height: 35px; margin: 0 auto;}
+.labelForCircleMobile {font-size: 12px; color: #333333; display: inline-block; margin-top: 10px}
+
+
+.memory64Mobile {border-radius: 50%; width: 50%; height: 30%; margin: 0 auto;}
+.memory256Mobile {border-radius: 50%; width: 50%; height: 30%; margin: 0 auto;}
+.memory128Mobile {border-radius: 50%; width: 50%; height: 30%; margin: 0 auto;}
+.labelForMemory {font-size: 12px; color: #333333; display: inline-block; margin-top: 35px}
+.memory {font-size: 170%}
+.gb {font-weight: 600}
+
+
+
+
+.wrapForBlockPriceMobile {background-color: #e7e7e7; width: 50%; height: 100%; margin-top: 5%; padding: 30px 20% 30px 20% }
+.BlockWithPriceMobile {height: 100%;}
+.buttonAddToBasketMobile {border-radius: 5px; background-color: #0f7bd1; width: 100%; padding: 4px 15px}
+.buttonAddToBasketMobile:hover {cursor: pointer;}
+.labelAddToBasket {color: #f1ffff; font-size: 17px;}
+.resultUnderOptionsMobile {font-weight: 600%; font-size: 150%}
+
+.blockUnderPhotoMobile {padding: 30px 0 30px 0px; display: grid; grid-template-columns: 50% 50%; width: 100%;}
+.labelFastAndFreeShippingMobile {font-size: 12px; font-weight: 600; text-align: center; margin: 1% 0 0 0}
+
+.chatWithSpecialistMobile {padding: 50px 0; display: grid; grid-template-columns: 25% 75%; width: 100%;}
+.labelQuestionsAndChatMobile {margin-left: 5%}
+.linkChatWithSpecialistMobile {color: #0070C9; text-decoration: none;}
+.linkChatWithSpecialistMobile:hover {text-decoration: underline;}
+
+.activeMobile {border-color: #0070C9}
+
+
+.modelActiveMobile {border-color: #0f7bd1};
+
+.swiper-container {
+
+}
+
+.slide {width: 100%; height: 200px}
+
+.blockColorUnavailableMobile {background-color: #f2f2f2; z-index: 99999999999; opacity: 0.3; padding: 10% 10% 10% 10%; width: inherit; border-radius: 20px; padding: 0 0 0 1%}
+.blockMemoryUnavailableMobile {background-color: #f2f2f2; z-index: 99999999999; opacity: 0.3; padding: 10% 10% 10% 10%; width: inherit; border-radius: 20px; padding: 0 0 0 2%}
+.blockCartUnavailableMobile {background-color: #f2f2f2; z-index: 99999999999; opacity: 0.3; padding: 10% 10% 10% 10%; width: inherit; border-radius: 20px; padding: 0 0 0 2%}
+
+.priceUnderLabelBuyIphoneMobile {padding: 0 0 0 5%}
+
+/* CONTENTmobile  CONTENTmobile   CONTENTmobile   CONTENTmobile   CONTENTmobile   CONTENTmobile   CONTENTmobile   CONTENTmobile */
+
+
+
+
+
+
+
+/* FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE    */
+
+.footer {display: none}
+
+.footer-mobile {background-color: #e4e4e4; height: auto; flex: 0 0 auto; padding: 5% 6% 10% 6%; margin-top: 5px; display: block}
+.footer-mobile__wrap {display: flex; flex-direction: column;}
+
+.footer-mobile__column {visibility: hidden; height:0; overflow: hidden; opacity: 0; transition: all 0.5s linear;}
+.active {display: flex; flex-direction: column; height: auto; visibility: visible; opacity: 1; overflow: none; text-decoration: none; list-style: none; padding: 6% 0 6% 4%;}
+
+.footer-mobile__link:link {text-decoration: none;  color: #515154; font-size: 90%;}
+.footer-mobile__link:hover {text-decoration: underline; color: #515154; color: #515154; font-size: 90%;}
+.footer-mobile__link:visited {text-decoration: none; color: #515154; font-size: 90%;}
+
+
+
+.footer-mobile__item {display: flex; justify-content: space-between; align-items: center; padding: 3% 0 3% 0;}
+
+.footer-mobile__title {color: #1d1d1f; font-size: 90%;}
+
+.footer-mobile__plus {color: #515154;}
+
+
+
+.footer-mobile__element {margin: 0% 0 2% 0; list-style: none; color: #515154; font-size: 90%; text-decoration: none;}
+
+
+.footer-mobile__labels {color: #515154; font-size: 90%; margin: 5% 0 0 0; display: block}
+
+
+
+.footer-mobile__row {display: flex; flex-direction: column;}
+
+/* FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE    */
+}
+
+
+
+
+
+
+

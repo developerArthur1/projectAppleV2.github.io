@@ -1,0 +1,736 @@
+
+
+
+* {margin: 0}
+
+html {padding: 0; margin: 0; width: 100%; height: 100%;}
+body {background-color: white; width: 100%; height: 100%;
+font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Arial",sans-serif; font-weight: normal; font-style: normal; margin: 0}
+
+.document-wrap {display: flex; flex-direction: column; min-height: 100%; height: 100%}
+
+.header-wrap {position: absolute; z-index: 9999999999; height: 40px; background-color: black; flex: 0 0 auto; display: flex; align-items: center; justify-content: flex-start; width: 100%;}
+
+.header {z-index: 99999999999; height: 40px; background-color: black; display: flex; align-items: center; justify-content: center; width: 100%;}
+
+.menu__button {z-index: 1; position: absolute; color: white; font-size: 20px; font-weight: 900; padding-left: 15px; }
+
+.logo {z-index: 99999999999; width: 25px; height: 25px; padding-right: 25px; display: block; }
+
+
+
+
+/*  МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ   */
+
+
+
+.menu {
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  width:100%;
+  height: 40px;
+  position: relative;
+}
+
+.submenu {
+  position: relative;
+  list-style: none;
+  top: -1000%;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #616161;
+  z-index: 99;
+
+ -moz-transition: all 400ms;
+ -webkit-transition: all 400ms;
+ transition: all 400ms;
+}
+
+.submenu.submenu__active {
+  top: 100%;
+}
+
+.subsubmenu__first.subsubmenu__active {
+top: 0%;
+-moz-transition: all 500ms;
+-webkit-transition: all 500ms;
+transition: all 500ms;
+
+}
+
+.subsubmenu__second.subsubmenu__active {
+  top: 0%;
+  -moz-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.subsubmenu__third.subsubmenu__active {
+  top: 0%;
+  -moz-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+
+.submenu__link {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  background-color: #616161;
+  white-space: nowrap;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-around;
+  margin: 2.3% 0 0 0;
+  list-style: none;
+  z-index: 99;
+}
+
+
+.submenu__item {width: 100%; z-index: 99;}
+
+
+.subsubmenu__link {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  background-color: #616161;
+  white-space: nowrap;
+  padding: 4% 0% 2% 0;
+  flex-direction: сolumn;
+  position: relative;
+  list-style: none;
+  z-index: 0;
+
+  width: inherit;
+  justify-content: center;
+}
+
+
+ul {
+list-style: none;
+padding-left: 0
+}
+
+
+.subsubmenu {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  width: inherit;
+  display: flex;
+  z-index: 0;
+  list-style: none;
+  top: -8000%;
+  padding-left: 0px;
+  list-style: none;
+
+  -moz-transition: all 400ms;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+
+.submenu__title {font-weight: 600; font-size: 110%; z-index: 99;}
+
+  .submenu__title:hover {
+    -moz-text-shadow:0 0 8px #FFFFFF;
+    -webkit-text-shadow:0 0 8px #FFFFFF;
+    text-shadow:0 0 8px #FFFFFF;
+  }
+
+  .submenu__title:hover {
+    -moz-text-shadow:0 0 15px #FFFFFF;
+    -webkit-text-shadow:0 0 15px #FFFFFF;
+    text-shadow:0 0 15px #FFFFFF;
+  }
+
+  .subsubmenu__title:hover {
+    -moz-text-shadow:0 0 15px #FFFFFF;
+    -webkit-text-shadow:0 0 15px #FFFFFF;
+    text-shadow:0 0 15px #FFFFFF;
+  }
+
+  .menu__button:hover {-moz-text-shadow:0 0 10px #FFFFFF;
+    -webkit-text-shadow:0 0 10px #FFFFFF;
+    text-shadow:0 0 10px #FFFFFF;
+  }
+
+
+/*  МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ      МЕНЮ   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ  */
+
+
+.content-wrap {flex: 1 0 auto;}
+
+.content {display: grid; grid-gap: 1em; margin: 0 0 1% 0}
+
+
+
+
+/* iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  */
+
+.iphone11Pro__labels-wrap {display: flex;  flex-direction: column; justify-content: center; align-items: center; vertical-align: middle; width: 100%; height: 100vh;}
+
+.iphone11Pro__labels {display: flex; flex-direction: column; vertical-align: middle; align-items: center; position: absolute; width: 100%; line-height: 1.2; padding: 0 0 280px 0%}
+
+.iphone11Pro__title {color: white; text-align: center; font-weight: 600; padding: 0 0 0 0%; font-size: 300%; width: 100%}
+.iphone11Pro__description {text-align: center; color: white; font-weight: normal; font-size: 150%; width: 100%; padding-left: 0%}
+
+.block-links { display: flex; justify-content: center; align-items: center; vertical-align: middle; padding: 0% 0 0 0%; width: 100%;}
+
+.block-links__first {color: #2997FF; font-size: 21px; text-decoration: none;}
+.block-links__second {color: #2997FF; font-size: 21px; width: 65px; padding: 0 0 0 2%; text-decoration: none}
+
+.block-links__first:hover {text-decoration: underline}
+.block-links__second:hover {text-decoration: underline}
+
+.strelka {color: #2997FF; padding: 0 0 0 1%; }
+
+.iphone11Pro__img {width: 100%; height: 100%}
+
+/* iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  */
+
+
+
+
+
+
+
+/* iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  */
+
+.iphone11__labels-wrap {display: flex;  flex-direction: column;  align-items: center; vertical-align: middle; width: 100%; height: auto; padding-top: 20px;}
+
+.iphone11__labels {display: flex; flex-direction: column;  align-items: center; vertical-align: middle; width: 100%; line-height: 1.2; padding: 0% 0 0 0%; background-color: #fafafa}
+
+.iphone11__title {color: black; text-align: center; font-weight: 600; padding: 0 0 0 0%; font-size: 300%; width: 100%}
+
+.iphone11__description {text-align: center; color: black; font-weight: normal; font-size: 150%; width: 100%; padding: 0% 0 0 0%;}
+
+.iphone11_img {width: 100%; height: 100%}
+
+/* iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  */
+
+
+
+
+
+
+
+
+
+
+
+.content-2columns__wrap {display: grid; grid-template-columns: 55% 45%; grid-gap: 1em;}
+  /* делает блоки COVID-19 и MacBook Air в две колонки*/
+
+
+
+/*COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  */
+.readLetter-wrap {}
+
+.covid19__labels-wrap {display: flex;  flex-direction: column;  align-items: center; vertical-align: middle; width: 100%; height: auto; background-color: #FAFAFA;}
+
+.covid19__labels {display: flex; position: relative; flex-direction: column;  align-items: center; vertical-align: middle; width: 100%; line-height: 1.5; padding: 30px 0 0 0%;}
+
+.covid19__title {color: black; text-align: center; font-weight: 400; padding: 0 0 0 0%; font-size: 250%; width: 100%}
+
+.content-2columns__item {background-color: #FAFAFA;}
+.covid19_img {width: 100%; height: 60%}
+/*COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  */
+
+
+
+
+
+
+
+
+
+/* MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  */
+
+.macbook-labels-wrap {display: flex;  flex-direction: column;  align-items: center; vertical-align: middle; width: 100%; height: auto; padding: 0px 0 10px 0;}
+
+.labelsForMacbookAir {display: flex; flex-direction: column;  align-items: center; vertical-align: middle; width: 100%; line-height: 1.1; padding: 0% 0 0 0%; background-color: #fafafa}
+.label_NEW_for_macbookAir {color: #c16141; padding: 0 0 0 0%}
+.macbookAir_title {color: black; text-align: center; font-weight: 600; padding: 0 0 0 0%; font-size: 250%; width: 100%}
+.macbookAir_description {text-align: center; color: black; font-weight: normal; font-size: 150%; width: 100%; padding: 0% 0 0 0%;}
+
+.links_on_macbookAir {display: block; display: flex; justify-content: center; align-items: center; vertical-align: middle; padding: 0% 0 0 0%; width: 100%;}
+
+.macbookAir_large {width:100%; height: 100%}
+/* MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* WWDC         WWDC         WWDC         WWDC         WWDC         WWDC         WWDC         WWDC         WWDC         */
+
+.wwdc {background-color: #000;}
+.wwdc-wrap {width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; vertical-align: middle; text-align: center; align-items: center;}
+.wwdc-labels {padding-top: 30px; background-color: black; line-height: 1.5;}
+.wwdc-label {color: white}
+.label-wwdc20 {font-size: 250%; font-weight: 600;}
+.june22 {font-size: 250%; font-weight: 600;}
+.label-wwdc-description {font-size: 130%;}
+.wwdc-img {width: 50%; height: 70%;}
+.wwdc-detailed {padding-right: 5px;}
+.upArrow {color:#2997FF; vertical-align: middle; display: inline-block; text-align: justify; height: 29px}
+
+
+
+
+/* WWDC         WWDC         WWDC         WWDC         WWDC         WWDC         WWDC         WWDC         WWDC         */
+
+
+
+
+
+
+
+
+
+/*  КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  FOOTER    FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER  */
+
+
+
+.contentFooter {}
+
+.footer__wrap {display: grid; grid-gap: 3em}
+
+
+.footer-column__first {
+   grid-column-start: 1;
+   grid-column-end: 2
+}
+
+.footer-column__second {
+   grid-column: 2/3
+}
+
+.footer-column__third {
+   grid-column: 3/4
+}
+
+.footer-column__fourth {
+   grid-column: 4/5
+}
+
+.footer-column__fifth {
+   grid-column: 5/6
+}
+
+
+
+.footer__link:link {list-style: none; color: #86868b; text-decoration: none; font-size: 90%;}
+.footer__link:hover {list-style: none; color: #86868b; text-decoration: underline; font-size: 90%;}
+.footer__link:visited {list-style: none; color: #86868b; text-decoration: none; font-size: 90%;}
+
+.footer__item {margin: 0 0 5% 0}
+
+.footer__item__last-item {margin: 0 0 20% 0}
+
+.footer__item__last-item {margin: 0 0 20% 0}
+
+.footer__item__last-item {margin: 0 0 20% 0}
+
+.footer-title {list-style: none; color: #86868b; font-weight: 600; font-size: 90%; margin: 0% 0 10% 0 }
+
+
+.footer-label {color: #86868b; font-size: 90%;}
+
+
+.footer__link__blue:link {color: #06c; text-decoration: none}
+
+.footer__link__blue:hover {color: #06c; text-decoration: underline;}
+
+.footer__link__blue:visited {color: #06c; text-decoration: none}
+
+
+
+.footer-row {display: flex; flex-direction: row;}
+
+.footer-row__item {list-style: none; color: #86868b; font-size: 90%;}
+
+.footer-row__link:link {text-decoration: none; color: #86868b;}
+.footer-row__link:hover {text-decoration: underline; color: #86868b;}
+.footer-row__link:visited {text-decoration: none; color: #86868b;}
+
+.footer-row__separator {margin: 0 10px 0 10px}
+
+.footer {background-color: #e4e4e4; height: 100%; flex: 0 0 auto; padding: 3% 6% 0% 6%;}
+
+.footer-mobile {display: none}
+
+/*  FOOTER    FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+  * {margin: 0}
+
+  html {padding: 0; margin: 0; width: 100%; height: 100%;}
+  body {background-color: white; width: 100%; height: 100%;
+  font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Arial",sans-serif; font-weight: normal; font-style: normal; margin: 0}
+  
+  .document-wrap {display: flex; flex-direction: column; min-height: 100%; height: 100%}
+  
+  .header-wrap {position: absolute; z-index: 9999999999; height: 40px; background-color: black; flex: 0 0 auto; display: flex; align-items: center; justify-content: flex-start; width: 100%;}
+  
+  .header {z-index: 99999999999; height: 40px; background-color: black; display: flex; align-items: center; justify-content: center; width: 100%;}
+  
+  .menu__button {z-index: 1; position: absolute; color: white; font-size: 20px; font-weight: 900; padding-left: 15px; }
+  
+  .logo {z-index: 99999999999; width: 22px; height: 22px; padding-right: 25px; display: block; }
+  
+    
+
+
+  
+
+/* MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE  */
+
+.submenu {
+  position: relative;
+  list-style: none;
+  top: -1000%;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  height: 20px;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #616161;
+  z-index: 99;
+ -moz-transition: all 400ms;
+ -webkit-transition: all 400ms;
+ transition: all 400ms;
+}
+
+
+
+  .submenu.active {
+    top: 100%;
+    padding: 0 0 0 0;
+  }
+
+  .subsubmenu {
+    position: relative;
+    z-index: -2;
+    flex-direction: column;
+    justify-content: center;
+    width: inherit;
+    display: flex;
+    list-style: none;
+    top: -1000%;
+    padding-left: 0px;
+    list-style: none;
+    -moz-transition: all 400ms;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+
+  .submenu__item {width: 100%}
+
+
+  .subsubmenu__first.active-subsubmenu {
+  top: 0%;
+  -moz-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+
+  }
+
+  .subsubmenu__second.active-subsubmenu {
+    top: 0%;
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+
+  .subsubmenu__third.active-subsubmenu {
+    top: 0%;
+    -moz-transition: all 500ms;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+
+
+  .submenu__link {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    background-color: #616161;
+    white-space: nowrap;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    min-height: 50%;
+    margin: 0;
+    font-size: 80%;
+    list-style: none;
+  }
+
+  .subsubmenu__link {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    background-color: #616161;
+    white-space: nowrap;
+    padding: 15px 0% 10px 0;
+    margin: 0;
+    flex-direction: сolumn;
+    position: relative;
+    list-style: none;
+    font-size: 75%;
+    width: inherit;
+    justify-content: center;
+  }
+
+
+
+.submenu__title {padding: 5% 0 5% 0}
+
+/* MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE  */
+
+
+
+
+
+
+.content-wrap {flex: 1 0 auto;}
+
+.content {display: grid; grid-gap: 1em; margin: 0 0 1% 0}
+
+
+
+
+/* iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  */
+
+.labels-wrap {display: flex; flex-direction: column; justify-content: center; align-items: center; height: auto; width: 100%;}
+
+.iphone11Pro__labels {display: flex; position: absolute; width: 100%; line-height: 1.2; padding: 100px 0 350px 0;}
+.iphone11Pro__labels-wrap {background-color: black; height: 400px}
+.iphone11Pro__title {color: white; text-align: center; font-weight: 600; padding: 0 0 0 0%; font-size: 230%; width: 100%}
+.iphone11Pro__description {text-align: center; color: white; font-weight: normal; font-size: 110%; width: 100%}
+
+.block-links {display: flex; padding: 0% 0 0 0%;}
+
+.block-links__first {color: #2997FF; font-size: 16px; text-decoration: none}
+.block-links__second {color: #2997FF; font-size: 16px; padding: 0 0 0 15px; text-decoration: none; width: 50px;}
+
+.iphone11Pro .block-links__first {font-size: 18px}
+.iphone11Pro .block-links__second {font-size: 18px; width: 15%;}
+
+.block-links__first:hover {text-decoration: underline}
+.block-links__second:hover {text-decoration: underline}
+
+.strelka {color: #2997FF; padding: 0 0 0 8px;}
+
+.iphone11Pro__img {height: 100%;}
+.iphone11Pro {padding-top: 50px; background-color: black;}
+
+/* iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  */
+
+
+
+
+
+
+
+/* iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  */
+.iphone11__labels-wrap {padding-top: 0}
+
+.iphone11__labels {display: flex; width: 100%; line-height: 1.1; padding: 0% 0 0 0%; background-color: #fafafa}
+
+.iphone11__title {color: black; text-align: center; font-weight: 600; padding: 0 0 0 0%; font-size: 230%; width: 100%}
+
+.iphone11__description {text-align: center; color: black; font-weight: normal; font-size: 100%; width: 100%; padding: 0% 0 0 0%;}
+
+
+/* iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  iPhone 11  */
+
+
+
+
+
+
+
+
+
+
+
+.content-2columns__wrap {display: grid; grid-template-columns: auto; grid-gap: 1em;}  /* делает блоки COVID-19 и MacBook Air в две колонки*/
+
+
+
+/*COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  */
+
+.covid19__labels{display: flex; position: relative; width: 70%; line-height: 1.5; padding: 0% 0 0 0%;}
+
+.covid19__title {color: black; text-align: center; font-weight: 400; padding: 0 0 0 0%; font-size: 180%; width: 100%}
+
+.covid19_img {width: 100%; height: 100%}
+
+/*COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  COVID-19  */
+
+
+
+
+
+
+
+
+
+/* MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  */
+
+.labelsForMacbookAir {display: flex;  width: 100%; line-height: 1.1; padding: 0% 0 0 0%; background-color: #fafafa}
+.label_NEW_for_macbookAir {color: #c16141; padding: 0 0 0 0%}
+.macbookAir_title {color: black; text-align: center; font-weight: 600; padding: 0 0 0 0%; font-size: 200%; width: 100%}
+.macbookAir_description {text-align: center; color: black; font-weight: normal; font-size: 130%; width: 100%; padding: 0% 0 0 0%;}
+
+
+
+.macbookAir_large {width:100%; height: 100%}
+
+/* MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  MacBook Air  */
+
+
+
+
+
+
+
+/* WWDC    WWDC    WWDC    WWDC    WWDC    WWDC    WWDC     */
+.wwdc-img {width: 100%;}
+.label-wwdc20 {font-size: 250%;}
+.june22 {font-size: 160%;}
+.label-wwdc-description {font-size: 99%;}
+.wwdc-label img {width: 12%; height: 12%;}
+
+/* WWDC    WWDC    WWDC    WWDC    WWDC    WWDC    WWDC     */
+
+
+
+
+
+
+
+
+/* FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE    */
+
+.footer {display: none}
+
+.footer-mobile {background-color: #e4e4e4; height: auto; flex: 0 0 auto; padding: 5% 6% 10% 6%; display: block}
+.footer-mobile__wrap {display: flex; flex-direction: column;}
+
+.footer-mobile__column {visibility: hidden; height:0; overflow: hidden; opacity: 0; transition: all 0.5s linear;}
+.active {display: flex; flex-direction: column; height: auto; visibility: visible; opacity: 1; overflow: none; text-decoration: none; list-style: none; padding: 6% 0 6% 4%;}
+
+.footer-mobile__link:link {text-decoration: none;  color: #515154; font-size: 90%;}
+.footer-mobile__link:hover {text-decoration: underline; color: #515154; color: #515154; font-size: 90%;}
+.footer-mobile__link:visited {text-decoration: none; color: #515154; font-size: 90%;}
+
+
+
+.footer-mobile__item {display: flex; justify-content: space-between; align-items: center; padding: 3% 0 3% 0;}
+
+.footer-mobile__title {color: #1d1d1f; font-size: 90%;}
+
+.footer-mobile__plus {color: #515154;}
+
+
+
+.footer-mobile__element {margin: 0% 0 2% 0; list-style: none; color: #515154; font-size: 90%; text-decoration: none;}
+
+
+.footer-mobile__labels {color: #515154; font-size: 90%; margin: 5% 0 0 0; display: block}
+
+
+
+.footer-mobile__row {display: flex; flex-direction: column;}
+
+/* FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE    */
+
+
+
+
+
+}

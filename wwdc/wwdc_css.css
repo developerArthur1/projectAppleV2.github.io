@@ -1,0 +1,834 @@
+
+* {margin: 0}
+
+html {padding: 0; margin: 0; width: 100%; height: 100%;}
+body {background-color: white; width: 100%; height: 100%;
+font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif; font-weight: normal; font-style: normal; margin: 0}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.document-wrap {display: flex; flex-direction: column; min-height: 100%; height: 100%}
+
+.header {height: 44px; width: 100%; background-color: #F3F3F3; 	backdrop-filter: blur(3px); flex: 0 0 auto; display: flex; align-items: center; justify-content: center; opacity: 0.95; position: fixed;}
+
+.logo {width: 115px; height: 44px; padding-right: 30px;}
+
+
+
+
+/* HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   */
+.header-mobile {display: none;}
+.menu-mobile {display: none;}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f3f3f3;
+  width: 60%;
+  padding-right: 30px;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: black;
+}
+
+.menu__item {
+  padding: 0 0px;
+  font-size: 14px;
+}
+
+/* HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   */
+
+
+
+
+
+
+
+
+
+
+
+/*  КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ  */
+
+
+
+/* ReadySetCode   ReadySetCode   ReadySetCode   ReadySetCode   ReadySetCode   ReadySetCode   */
+
+.wwdc-label {
+  color: white;
+}
+
+.wwdc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.content-wrap {flex: 1 0 auto;}
+
+.wwdc-labels {
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 300px;
+}
+
+.wwdc__title {
+  padding-bottom: 20px;
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.wwdc__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.wwdc__description-label {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.wwdc__img--mobile {display: none;}
+.wwdc__img {width: 100%; height: auto; padding-top: 70px; padding-bottom: 50px;}
+
+/* ReadySetCode   ReadySetCode   ReadySetCode   ReadySetCode   ReadySetCode   ReadySetCode   */
+
+
+
+
+/* ApplePlatforms   ApplePlatforms   ApplePlatforms   ApplePlatforms   ApplePlatforms    */
+.apple-platforms-wrapper {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.apple-platforms {display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #F7F7F7; padding-bottom: 50px;}
+.apple-platforms__title {color: #333333; font-size: 300%; font-weight: 600; margin: 50px 0 15px 0 ;}
+.apple-platforms__links-block {margin-bottom: 20px;}
+.apple-platforms__link {text-decoration: none; color: #0070c9; font-size: 20px;}
+
+.apple-platforms__link:after {
+  content: '>';
+  padding: 0 15px 0 5px;
+}
+
+.apple-platforms__img_mobile {display: none}
+.apple-platforms__img {width: 100%; height: 100%;}
+/* ApplePlatforms   ApplePlatforms   ApplePlatforms   ApplePlatforms   ApplePlatforms    */
+
+
+
+
+/* XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    */
+.xcode-wrapper {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.xcode {display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 100px 0 50px 0;}
+.xcode__title {font-size: 56px; font-weight: 600; color: #333333;}
+
+.xcode__description-block {margin: 5px 0 50px 0; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.xcode__description {font-size: 24px; color: #333333; line-height: 1.16667;}
+
+.xcode__img {width: 50%; height: 50%;}
+/* XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    */
+
+
+
+/* Mac Catalyst    Mac Catalyst    Mac Catalyst    Mac Catalyst    Mac Catalyst     */
+.mac-catalyst-wrapper {display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #F7F7F7;}
+.mac-catalyst {display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 100px 0 50px 0; background-color: #F7F7F7;}
+.mac-catalyst__title {font-size: 56px; font-weight: 600; color: #333333;}
+.mac-catalyst__description-block {margin: 5px 0 50px 0; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 24px;}
+/* Mac Catalyst    Mac Catalyst    Mac Catalyst    Mac Catalyst    Mac Catalyst     */
+
+
+
+.grid {display: grid; grid-template-columns: 50% 50%;  width: 100%; margin-top: 1em; margin-bottom: 1em;}
+
+
+
+
+/* Augmented Reality    Augmented Reality    Augmented Reality    Augmented Reality     */
+.augmented-reality {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #F9F6E5; margin-right: 1em; margin-bottom: 1em;}
+.augmented-reality__title {font-size: 44px; font-weight: 600; color: #333333; margin-bottom: 20px; padding-top: 70px;}
+.augmented-reality__description {font-size: 22px; font-weight: 400; color: #333333;}
+.augmented-reality__description:last-child {
+  margin-bottom: 70px;
+}
+.augmented-reality__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053; }
+.augmented-reality__img {width: 30%; height: 30%; padding-bottom: 70px;}
+
+/* Augmented Reality    Augmented Reality    Augmented Reality    Augmented Reality     */
+
+
+
+
+
+/* MachineLearning    MachineLearning     MachineLearning     MachineLearning     MachineLearning       */
+
+.machine-learning {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #b9d6dc; margin-bottom: 1em;}
+.machine-learning__title {font-size: 44px; font-weight: 600; color: #333333; margin-bottom: 20px; padding-top: 70px;}
+.machine-learning__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053;}
+.machine-learning__description {font-size: 22px; font-weight: 400; color: #333333; line-height: 1.21053;}
+.machine-learning__description:last-child {
+  margin-bottom: 70px;
+}
+
+.machine-learning__img {width: 30%; height: 30%; padding-bottom: 70px;}
+
+/* MachineLearning    MachineLearning     MachineLearning     MachineLearning     MachineLearning       */
+
+
+
+
+/* Siri     Siri    Siri    Siri    Siri    Siri    Siri    Siri    Siri    */
+.siri {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #B5CCDE; margin-right: 1em; margin-right: 1em; margin-bottom: 1em;}
+.siri__title {font-size: 44px; font-weight: 600; color: #333333; margin-bottom: 20px; padding-top: 70px;}
+.siri__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053;}
+.siri__description {font-size: 22px; font-weight: 400; color: #333333; line-height: 1.21053;}
+.siri__description:last-child {
+  margin-bottom: 70px;
+}
+
+.siri__img {width: 30%; height: 30%; padding-bottom: 70px;}
+
+/* Siri     Siri    Siri    Siri    Siri    Siri    Siri    Siri    Siri    */
+
+
+
+
+/* Sign-in-with-Apple    Sign-in-with-Apple   Sign-in-with-Apple   Sign-in-with-Apple   */
+
+.sign-in {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #4E4138; margin-bottom: 1em;}
+.sign-in__title {font-size: 44px; font-weight: 600; color: white; margin-bottom: 10px; padding-top: 70px;}
+.sign-in__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053;}
+.sign-in__description {font-size: 22px; font-weight: 400; color: white; line-height: 1.21053;}
+.sign-in__description:last-child {
+  margin-bottom: 20px;
+}
+
+.sign-in__img {width: 50%; height: 50%; padding-bottom: 70px;}
+
+
+/* Sign-in-with-Apple    Sign-in-with-Apple   Sign-in-with-Apple   Sign-in-with-Apple   */
+
+
+
+
+/* watch-os     watch-os     watch-os     watch-os     watch-os     watch-os     */
+
+.watch-os {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #FAFAFA; margin-right: 1em;}
+.watch-os__title {font-size: 44px; font-weight: 600; color: #333333; margin-bottom: 10px; padding-top: 70px;}
+.watch-os__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053;}
+.watch-os__description {font-size: 22px; font-weight: 400; color: #333333; line-height: 1.21053;}
+.watch-os__description:last-child {
+  margin-bottom: 20px;
+}
+
+.watch-os__img {width: 40%; height: 100%; padding-bottom: 70px;}
+
+/* watch-os     watch-os     watch-os     watch-os     watch-os     watch-os     */
+
+
+
+
+
+/* iPad-OS    iPad-OS     iPad-OS     iPad-OS     iPad-OS     iPad-OS     iPad-OS       */
+
+.ipad-os {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #FAFAFA;}
+.ipad-os__title {font-size: 44px; font-weight: 600; color: #333333; margin-bottom: 10px; padding-top: 70px;}
+.ipad-os__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053;}
+.ipad-os__description {font-size: 22px; font-weight: 400; color: #333333; line-height: 1.21053;}
+.ipad-os__description:last-child {
+  margin-bottom: 20px;
+}
+
+.ipad-os__img {width: 70%; height: 90%; padding-bottom: 70px;}
+
+
+/* iPad-OS    iPad-OS     iPad-OS     iPad-OS     iPad-OS     iPad-OS     iPad-OS       */
+
+
+
+/* AppStore     AppStore     AppStore     AppStore     AppStore     AppStore     */
+
+.app-store {display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #E0ECF6; margin: 20px 0 12px 0; padding: 20px 0;}
+.app-store__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 20px 0;}
+.app-store__description {color: #333339; font-size: 24px; font-weight: 600;}
+.app-store__link {text-decoration: none; color: #0070c9; font-weight: 400; margin-bottom: 10px;}
+.app-store__link:after {
+  content: '>';
+  padding-left: 3px;
+}
+
+
+/* AppStore     AppStore     AppStore     AppStore     AppStore     AppStore     */
+
+
+
+
+
+
+/* Footer Row Blocks    Footer Row Blocks   Footer Row Blocks   Footer Row Blocks   */
+
+.footer__row {display: flex; flex-direction: row; justify-content: space-around; align-items: center;}
+.row-block {display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 50px;}
+.block-title {color: #333333; font-size: 17px; margin-bottom: 10px; margin-top: 10px; font-weight: 600;}
+.description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.42861;}
+.description-string {font-size: 14px; color: #333333;}
+.block-link {text-decoration: none; color: #0070c9; font-size: 14px; margin-top: 10px; }
+.block-link:after {
+  content: '>';
+  padding-left: 3px;
+}
+/* Footer Row Blocks    Footer Row Blocks   Footer Row Blocks   Footer Row Blocks   */
+
+
+
+
+/*  КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  FOOTER    FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER  */
+
+.footer {background-color: #F5F5F7; height: 65%; flex: 0 0 auto; padding: 3% 6% 10% 6%;}
+
+.footer-mobile {display: none}
+
+.contentFooter {}
+
+.footer__wrap {display: grid; grid-gap: 3em}
+
+
+.footer-column__first {
+   grid-column-start: 1;
+   grid-column-end: 2
+}
+
+.footer-column__second {
+   grid-column: 2/3
+}
+
+.footer-column__third {
+   grid-column: 3/4
+}
+
+.footer-column__fourth {
+   grid-column: 4/5
+}
+
+.footer-column__fifth {
+   grid-column: 5/6
+}
+
+
+
+.footer__link:link {list-style: none; color: #86868b; text-decoration: none; font-size: 90%;}
+.footer__link:hover {list-style: none; color: #86868b; text-decoration: underline; font-size: 90%;}
+.footer__link:visited {list-style: none; color: #86868b; text-decoration: none; font-size: 90%;}
+
+.footer__item {margin: 0 0 5% 0}
+
+.footer__item__last-item {margin: 0 0 30px 0}
+
+.footer-title {list-style: none; color: #86868b; font-weight: 600; font-size: 90%; margin: 0% 0 14px 0 }
+
+
+.footer-label {color: #86868b; font-size: 90%; margin-right: 30px;}
+
+
+.footer__link__blue:link {color: #06c; text-decoration: none}
+
+.footer__link__blue:hover {color: #06c; text-decoration: underline;}
+
+.footer__link__blue:visited {color: #06c; text-decoration: none}
+
+
+
+.footer-row {display: flex; flex-direction: row;}
+
+.footer-row__item {list-style: none; color: #515154; font-size: 90%;}
+
+.footer-row__link:link {text-decoration: none; color: #86868b;}
+.footer-row__link:hover {text-decoration: underline; color: #86868b;}
+.footer-row__link:visited {text-decoration: none; color: #86868b;}
+
+.footer-row__separator {margin: 0 10px 0 10px}
+
+
+
+.footer {background-color: #e4e4e4; height: 100%; flex: 0 0 auto; padding: 3% 6% 0% 6%;}
+
+
+/*  FOOTER    FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+.none {display: none;}
+
+
+
+/* MENU MOBILE */
+
+.logo {padding: 0; margin-right: 100px;}
+.menu {display: none;}
+.header {display: none;}
+.header__button {font-size: 26px; margin-right: 100px;}
+
+.header-mobile {position: fixed; z-index: 9999; display: flex; justify-content: center; align-items: center; height: 44px; width: 100%; background-color: #F3F3F3;}
+
+.menu-mobile-block::before {
+  content: ''; background-color: #D7D7D7; width: 100%; display: block; height: 1px; z-index: 999999999;
+}
+
+.header-mobile.menu-mobile--active {
+  background-color: #fff;
+  -moz-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+
+.menu-mobile {display: flex; flex-direction: column; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start; width: 100%; padding-top: 10px;}
+.menu-mobile-block {position: fixed; margin-top: 50px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #fff; width: 100%; height: 100%; z-index: -1; opacity: 0;
+  -moz-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+} 
+
+.menu-mobile-wrap {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #fff; width: 70%;}
+
+.menu-mobile-block.menu-mobile--active {
+  z-index: 999;
+  opacity: 1;
+  -moz-transition: all 500ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.menu__link--first-link {
+  text-decoration: none;
+  color: black;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+.menu__link::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #D7D7D7;
+}
+
+.menu__item {
+  padding: 10px 0 10px 0px;
+  font-size: 18px;
+}
+
+.menu__link--last-link {
+  margin-bottom: 20px;
+}
+
+/* MENU MOBILE */
+
+
+
+
+
+
+
+
+
+
+
+/*  КОНТЕНТ MOBILE     КОНТЕНТ MOBILE     КОНТЕНТ MOBILE       КОНТЕНТ MOBILE     КОНТЕНТ MOBILE     КОНТЕНТ MOBILE */
+
+
+
+/* ReadySetCode   ReadySetCode   ReadySetCode   ReadySetCode   ReadySetCode   ReadySetCode   */
+
+.wwdc-label {
+  color: white;
+}
+
+.wwdc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 44px;
+  background-color: black;
+}
+
+.content-wrap {flex: 1 0 auto;}
+
+.wwdc-labels {
+  color: white;
+  width: 90%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  margin-top: 50px;
+
+}
+
+.wwdc__title {
+  padding-bottom: 20px;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.wwdc__description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.8;
+}
+
+.wwdc__description-label {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.wwdc__img--mobile {display: block; width: 100%; height: 100%; margin-top: 200px; padding-bottom: 20px;}
+.wwdc__img {display: none;}
+
+/* ReadySetCode   ReadySetCode   ReadySetCode   ReadySetCode   ReadySetCode   ReadySetCode   */
+
+
+
+
+/* ApplePlatforms   ApplePlatforms   ApplePlatforms   ApplePlatforms   ApplePlatforms    */
+
+.apple-platforms-wrapper {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.apple-platforms {display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #F7F7F7; padding-bottom: 50px;}
+.apple-platforms__title {color: #333333; font-size: 35px; font-weight: 600; margin: 50px 0 15px 0 ;}
+.apple-platforms__links-block {display: flex; justify-content: center; align-items: center; text-align: center; margin-bottom: 20px; width: 100%; flex-wrap: wrap; line-height: 1.5;}
+.apple-platforms__link {text-decoration: none; color: #0070c9; font-size: 19px; }
+
+.apple-platforms__link:after {
+  content: '>';
+  padding: 0 15px 0 5px;
+}
+
+.apple-platforms__img {display: none;}
+.apple-platforms__img_mobile {width: 100%; height: 100%; display: block;}
+/* ApplePlatforms   ApplePlatforms   ApplePlatforms   ApplePlatforms   ApplePlatforms    */
+
+
+
+
+/* XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    */
+.xcode-wrapper {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.xcode {display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 100px 0 50px 0;}
+.xcode__title {font-size: 33px; font-weight: 600; color: #333333; text-align: center;}
+
+.xcode__description-block {margin: 5px 0 30px 0; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; width: 80%;}
+.xcode__description {font-size: 20px; color: #333333; line-height: 1.16667;}
+
+.xcode__img {width: 90%; height: 100%;}
+/* XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    XCODE    */
+
+
+
+/* Mac Catalyst    Mac Catalyst    Mac Catalyst    Mac Catalyst    Mac Catalyst     */
+.mac-catalyst-wrapper {display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #F7F7F7;}
+.mac-catalyst {display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 60px 0 50px 0; background-color: #F7F7F7;}
+.mac-catalyst__title {font-size: 35px; font-weight: 600; color: #333333; text-align: center;}
+.mac-catalyst__description-block {margin: 5px 0 50px 0; display: flex; flex-direction: column; justify-content: center; align-items: center; font-size: 19px; text-align: center; width: 80%;}
+.mac-catalyst__img {width: 90%; height: 100%;}
+/* Mac Catalyst    Mac Catalyst    Mac Catalyst    Mac Catalyst    Mac Catalyst     */
+
+
+
+.grid {display: grid; grid-template-columns: 100%;  width: 100%; margin-top: 1em; margin-bottom: 1em;}
+
+
+
+
+/* Augmented Reality    Augmented Reality    Augmented Reality    Augmented Reality     */
+.augmented-reality {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #F9F6E5; margin-bottom: 1em; width: 100%;}
+.augmented-reality__title {font-size: 36px; font-weight: 600; color: #333333; margin-bottom: 20px; padding-top: 70px; text-align: center;}
+.augmented-reality__description {font-size: 20px; font-weight: 400; color: #333333; text-align: center;}
+.augmented-reality__description:last-child {
+  margin-bottom: 70px;
+}
+.augmented-reality__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053; width: 90%; }
+.augmented-reality__img {width: 50%; height: 50%; padding-bottom: 70px;}
+
+/* Augmented Reality    Augmented Reality    Augmented Reality    Augmented Reality     */
+
+
+
+
+
+/* MachineLearning    MachineLearning     MachineLearning     MachineLearning     MachineLearning       */
+
+.machine-learning {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #b9d6dc; margin-bottom: 1em;}
+.machine-learning__title {font-size: 35px; font-weight: 600; color: #333333; margin-bottom: 20px; padding-top: 70px; text-align: center;}
+.machine-learning__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053; text-align: center; width: 80%;}
+.machine-learning__description {font-size: 22px; font-weight: 400; color: #333333; line-height: 1.21053;}
+.machine-learning__description:last-child {
+  margin-bottom: 70px;
+}
+
+.machine-learning__img {width: 50%; height: 50%; padding-bottom: 70px;}
+
+/* MachineLearning    MachineLearning     MachineLearning     MachineLearning     MachineLearning       */
+
+
+
+
+/* Siri     Siri    Siri    Siri    Siri    Siri    Siri    Siri    Siri    */
+.siri {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #B5CCDE; margin-bottom: 1em; width: 100%;}
+.siri__title {font-size: 49px; font-weight: 600; color: #333333; margin-bottom: 20px; padding-top: 70px;}
+.siri__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053; text-align: center; width: 90%;}
+.siri__description {font-size: 22px; font-weight: 400; color: #333333; line-height: 1.21053;}
+.siri__description:last-child {
+  margin-bottom: 70px;
+}
+
+.siri__img {width: 50%; height: 50%; padding-bottom: 70px;}
+
+/* Siri     Siri    Siri    Siri    Siri    Siri    Siri    Siri    Siri    */
+
+
+
+/* Sign-in-with-Apple    Sign-in-with-Apple   Sign-in-with-Apple   Sign-in-with-Apple   */
+
+.sign-in {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #4E4138; margin-bottom: 1em;}
+.sign-in__title {font-size: 44px; font-weight: 600; color: white; margin-bottom: 10px; padding-top: 70px; text-align: center;}
+.sign-in__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053; width: 90%; text-align: center;}
+.sign-in__description {font-size: 20px; font-weight: 400; color: white; line-height: 1.21053;}
+.sign-in__description:last-child {
+  margin-bottom: 20px;
+}
+
+.sign-in__img {width: 80%; height: 80%; padding-bottom: 70px;}
+
+
+/* Sign-in-with-Apple    Sign-in-with-Apple   Sign-in-with-Apple   Sign-in-with-Apple   */
+
+
+/* watch-os     watch-os     watch-os     watch-os     watch-os     watch-os     */
+
+.watch-os {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #FAFAFA; margin-right: 1em;}
+.watch-os__title {font-size: 49px; font-weight: 600; color: #333333; margin-bottom: 10px; padding-top: 70px; text-align: center;}
+.watch-os__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053; text-align: center; width: 90%;}
+.watch-os__description {font-size: 22px; font-weight: 400; color: #333333; line-height: 1.21053;}
+.watch-os__description:last-child {
+  margin-bottom: 20px;
+}
+
+.watch-os__img {width: 40%; height: 100%; padding-bottom: 70px;}
+
+/* watch-os     watch-os     watch-os     watch-os     watch-os     watch-os     */
+
+
+
+/* iPad-OS    iPad-OS     iPad-OS     iPad-OS     iPad-OS     iPad-OS     iPad-OS       */
+
+.ipad-os {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #FAFAFA;}
+.ipad-os__title {font-size: 49px; font-weight: 600; color: #333333; margin-bottom: 10px; padding-top: 70px;}
+.ipad-os__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053; text-align: center; width: 90%;}
+.ipad-os__description {font-size: 22px; font-weight: 400; color: #333333; line-height: 1.21053;}
+.ipad-os__description:last-child {
+  margin-bottom: 20px;
+}
+
+.ipad-os__img {width: 90%; height: 90%; padding-bottom: 70px;}
+
+
+/* iPad-OS    iPad-OS     iPad-OS     iPad-OS     iPad-OS     iPad-OS     iPad-OS       */
+
+
+
+/* AppStore     AppStore     AppStore     AppStore     AppStore     AppStore     */
+
+.app-store {display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #E0ECF6; margin: 20px 0 12px 0; padding: 20px 0;}
+.app-store__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 20px 0; text-align: center;}
+.app-store__description {color: #333339; font-size: 20px; font-weight: 600;}
+.app-store__link {text-decoration: none; color: #0070c9; font-weight: 400; margin-bottom: 10px;}
+.app-store__link:after {
+  content: '>';
+  padding-left: 3px;
+}
+
+
+/* AppStore     AppStore     AppStore     AppStore     AppStore     AppStore     */
+
+
+
+
+
+
+/* Footer Row Blocks    Footer Row Blocks   Footer Row Blocks   Footer Row Blocks   */
+
+.footer__row {display: flex; flex-direction: row; justify-content: space-around; align-items: center;}
+.row-block {display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 50px;}
+.block-title {color: #333333; font-size: 17px; margin-bottom: 10px; margin-top: 10px; font-weight: 600;}
+.description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.42861;}
+.description-string {font-size: 14px; color: #333333;}
+.block-link {text-decoration: none; color: #0070c9; font-size: 14px; margin-top: 10px; }
+.block-link:after {
+  content: '>';
+  padding-left: 3px;
+}
+/* Footer Row Blocks    Footer Row Blocks   Footer Row Blocks   Footer Row Blocks   */
+
+
+
+
+/*  КОНТЕНТ MOBILE     КОНТЕНТ MOBILE     КОНТЕНТ MOBILE       КОНТЕНТ MOBILE     КОНТЕНТ MOBILE     КОНТЕНТ MOBILE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE    */
+
+.footer {display: none}
+.footer__row {flex-direction: column;}
+.footer-mobile {background-color: #e4e4e4; height: auto; flex: 0 0 auto; padding: 5% 6% 10% 6%; display: block}
+.footer-mobile__wrap {display: flex; flex-direction: column;}
+
+.footer-mobile__column {visibility: hidden; height:0; overflow: hidden; opacity: 0; transition: all 0.5s linear;}
+.active {display: flex; flex-direction: column; height: auto; visibility: visible; opacity: 1; overflow: none; text-decoration: none; list-style: none; padding: 6% 0 6% 4%;}
+
+.footer-mobile__link:link {text-decoration: none;  color: #515154; font-size: 90%;}
+.footer-mobile__link:hover {text-decoration: underline; color: #515154; color: #515154; font-size: 90%;}
+.footer-mobile__link:visited {text-decoration: none; color: #515154; font-size: 90%;}
+
+.footer-row__item:after {
+  content: '|';
+  color: #515154;
+  margin: 0px 10px;
+  
+}
+
+
+.footer-mobile__item {display: flex; justify-content: space-between; align-items: center; padding: 3% 0 3% 0;}
+
+.footer-mobile__title {color: #1d1d1f; font-size: 90%;}
+
+.footer-mobile__plus {color: #515154;}
+
+.footer-mobile__element {margin: 0% 0 2% 0; list-style: none; color: #515154; font-size: 90%; text-decoration: none;}
+
+.footer-mobile__labels {color: #515154; font-size: 90%; margin: 5% 0 0 0; display: block}
+
+.footer-mobile__row {display: flex; flex-direction: column;}
+
+/* FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE    */
+
+
+
+
+* {margin: 0}
+
+html {padding: 0; margin: 0; width: 100%; height: 100%;}
+body {background-color: white; width: 100%; height: 100%;
+font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif; font-weight: normal; font-style: normal; margin: 0}
+}
+
+
+
+
+
+
+
+
+
+
+
+
