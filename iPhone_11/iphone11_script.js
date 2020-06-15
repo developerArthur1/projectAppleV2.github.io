@@ -60,7 +60,7 @@ const popUpBlockLabelMobile = document.querySelector('.label_in_freeShippingMobi
 window.addEventListener("load", () => {
   setTimeout(() => {popUpBlock.classList.add("active5")}, 600);
   popUpChangeColor();
-  function popUpChangeColor () {setTimeout(() => {popUpBlock.style.backgroundColor = '#f2f2f2'; popUpBlockLabel.style.color = '#333333'}, 2000)}
+  function popUpChangeColor () {setTimeout(() => {popUpBlock.style.backgroundColor = '#f2f2f2'; popUpBlockLabel.style.color = '#333333'}, 2500)}
 
   setTimeout(() => {popUpBlockMobile.classList.add("activeMobile")}, 600);
   popUpChangeColorMobile();

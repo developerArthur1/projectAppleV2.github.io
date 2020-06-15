@@ -431,12 +431,18 @@ ul {
 
 /* MENU MOBILE */
 
-.logo {padding: 0; margin-right: 100px;}
+.logo {padding: 0;}
 .menu {display: none;}
 .header {display: none;}
-.header__button {font-size: 26px; margin-right: 100px;}
+.header__button {font-size: 26px; z-index: 2; display: block; margin-left: 20px;}
 
-.header-mobile {position: fixed; z-index: 9999; display: flex; justify-content: center; align-items: center; height: 44px; width: 100%; background-color: #F3F3F3;}
+.header-mobile {position: fixed; z-index: 9999; display: flex; justify-content: center; align-items: center; height: 44px; width: 100%; background-color: #F3F3F3; flex: 0 0 auto;}
+
+.header-wrap {position: absolute; z-index: 9999999999; height: 44px; display: flex; align-items: center; justify-content: flex-start; width: 100%;}
+.header {z-index: 1; height: 44px; display: flex; align-items: center; justify-content: center; width: 100%;}
+
+
+
 
 .menu-mobile-block::before {
   content: ''; background-color: #D7D7D7; width: 100%; display: block; height: 1px; z-index: 999999999;
@@ -685,7 +691,7 @@ ul {
 
 /* watch-os     watch-os     watch-os     watch-os     watch-os     watch-os     */
 
-.watch-os {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #FAFAFA; margin-right: 1em;}
+.watch-os {display: flex; flex-direction: column; justify-content: flex-start; align-items: center; background-color: #FAFAFA; margin-right: 0;}
 .watch-os__title {font-size: 49px; font-weight: 600; color: #333333; margin-bottom: 10px; padding-top: 70px; text-align: center;}
 .watch-os__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 1.21053; text-align: center; width: 90%;}
 .watch-os__description {font-size: 22px; font-weight: 400; color: #333333; line-height: 1.21053;}
@@ -693,7 +699,7 @@ ul {
   margin-bottom: 20px;
 }
 
-.watch-os__img {width: 40%; height: 100%; padding-bottom: 70px;}
+.watch-os__img {width: 70%; height: 100%; padding-bottom: 70px;}
 
 /* watch-os     watch-os     watch-os     watch-os     watch-os     watch-os     */
 
@@ -808,6 +814,14 @@ ul {
 .footer-mobile__labels {color: #515154; font-size: 90%; margin: 5% 0 0 0; display: block}
 
 .footer-mobile__row {display: flex; flex-direction: column;}
+
+.footer-row__link:visited {
+  color: #515154;
+}
+
+.footer-row__link:link {
+  color: #515154;
+}
 
 /* FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE    */
 

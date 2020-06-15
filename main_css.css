@@ -189,25 +189,33 @@ padding-left: 0
 
 
 /* iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  */
-
+.iphone11pro {width: 100%; height: 100%;}
 .iphone11Pro__labels-wrap {display: flex;  flex-direction: column; justify-content: center; align-items: center; vertical-align: middle; width: 100%; height: 100vh;}
 
-.iphone11Pro__labels {display: flex; flex-direction: column; vertical-align: middle; align-items: center; position: absolute; width: 100%; line-height: 1.2; padding: 0 0 280px 0%}
+.iphone11Pro__labels {display: flex; flex-direction: column; vertical-align: middle; justify-content: flex-end; align-items: center; width: 100%; height: 100%; line-height: 1.2;  background-color: black;}
 
 .iphone11Pro__title {color: white; text-align: center; font-weight: 600; padding: 0 0 0 0%; font-size: 300%; width: 100%}
 .iphone11Pro__description {text-align: center; color: white; font-weight: normal; font-size: 150%; width: 100%; padding-left: 0%}
 
-.block-links { display: flex; justify-content: center; align-items: center; vertical-align: middle; padding: 0% 0 0 0%; width: 100%;}
+.block-links { display: flex; justify-content: center; align-items: center; vertical-align: middle;}
 
-.block-links__first {color: #2997FF; font-size: 21px; text-decoration: none;}
-.block-links__second {color: #2997FF; font-size: 21px; width: 65px; padding: 0 0 0 2%; text-decoration: none}
+.block-links__first, .block-links__second {color: #2997FF; font-size: 21px; text-decoration: none;}
 
 .block-links__first:hover {text-decoration: underline}
 .block-links__second:hover {text-decoration: underline}
 
-.strelka {color: #2997FF; padding: 0 0 0 1%; }
+.block-links__first:after {
+  content: '>';
+  margin: 0 15px;
+}
 
-.iphone11Pro__img {width: 100%; height: 100%}
+.block-links__second:after {
+  content: '>';
+  margin: 0 15px;
+}
+
+
+.iphone11Pro__img {width: 100%; height: 60%; flex-shrink: 0;}
 
 /* iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  */
 
@@ -304,7 +312,15 @@ padding-left: 0
 .label-wwdc-description {font-size: 130%;}
 .wwdc-img {width: 50%; height: 70%;}
 .wwdc-detailed {padding-right: 5px;}
-.upArrow {color:#2997FF; vertical-align: middle; display: inline-block; text-align: justify; height: 29px}
+.block-links__wwdc {color: #2997FF; font-size: 21px; text-decoration: none;}
+.block-links__wwdc:after {
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  text-align: justify;
+  height: 40px;
+  margin-left: 12px;
+}
 
 
 
@@ -585,27 +601,25 @@ padding-left: 0
 /* iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  */
 
 .labels-wrap {display: flex; flex-direction: column; justify-content: center; align-items: center; height: auto; width: 100%;}
-
-.iphone11Pro__labels {display: flex; position: absolute; width: 100%; line-height: 1.2; padding: 100px 0 350px 0;}
-.iphone11Pro__labels-wrap {background-color: black; height: 400px}
+.iphone11Pro {padding: 0 0 0 0; background-color: black;}
+.iphone11Pro__labels {display: flex; width: 100%; line-height: 1.2; padding: 40px 0 20px 0;}
+.iphone11Pro__labels-wrap {background-color: black; height: auto}
 .iphone11Pro__title {color: white; text-align: center; font-weight: 600; padding: 0 0 0 0%; font-size: 230%; width: 100%}
 .iphone11Pro__description {text-align: center; color: white; font-weight: normal; font-size: 110%; width: 100%}
 
-.block-links {display: flex; padding: 0% 0 0 0%;}
+.block-links {display: flex; flex-direction: row; justify-content: center; align-items: center; text-align: center; padding: 0 0 0 0%;}
 
 .block-links__first {color: #2997FF; font-size: 16px; text-decoration: none}
-.block-links__second {color: #2997FF; font-size: 16px; padding: 0 0 0 15px; text-decoration: none; width: 50px;}
+.block-links__second {color: #2997FF; font-size: 16px; padding: 0 0 0 0px; text-decoration: none;}
 
-.iphone11Pro .block-links__first {font-size: 18px}
-.iphone11Pro .block-links__second {font-size: 18px; width: 15%;}
+.iphone11Pro .block-links__first {font-size: 18px;}
+.iphone11Pro .block-links__second {font-size: 18px;}
 
 .block-links__first:hover {text-decoration: underline}
 .block-links__second:hover {text-decoration: underline}
 
-.strelka {color: #2997FF; padding: 0 0 0 8px;}
 
-.iphone11Pro__img {height: 100%;}
-.iphone11Pro {padding-top: 50px; background-color: black;}
+.iphone11Pro__img {height: 200px; width: 100%; flex-shrink: 0;}
 
 /* iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  iPhone 11 Pro  */
 

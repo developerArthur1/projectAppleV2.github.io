@@ -178,9 +178,9 @@ padding-left: 0
 
 .content {flex: 1 0 auto;}
 
-.shapka_iphone11 {width: 100%; display: inline-block; padding-bottom: 1%; height: 2.5%; background-color: white; color: #111111; z-index: 3;}
+.shapka_iphone11 {width: 100%; display: inline-block; padding: 15px 0 15px 0; height: auto; background-color: white; color: #111111; z-index: 99999999;}
 
-.label_in_shapka {padding: 1% 0 0 9%; display: inline-block; color: #111111; font-weight: 600; font-size: 150%; z-index: 3;}
+.label_in_shapka {padding: 0 0 0 9%; display: block; color: #111111; font-weight: 600; font-size: 130%; z-index: 999999999999;}
 
 
 
@@ -191,7 +191,7 @@ padding-left: 0
   background-color: #0070C9;
   margin: 0 0 0% 0;
   width: 100%;
-  height: 1.7%;
+  height: 35px;
   display: flex;
   position: relative;
   z-index: -1;
@@ -421,8 +421,7 @@ padding-left: 0
   .menu__button {z-index: 1; position: absolute; color: white; font-size: 20px; font-weight: 900; padding-left: 15px; }
   
   .logo {z-index: 99999999999; width: 22px; height: 22px; padding-right: 25px; display: block; }
-  
-    
+
 
 /* MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE  */
 
@@ -438,7 +437,7 @@ padding-left: 0
   flex-direction: row;
   display: flex;
   width: 100%;
-  height: 20px;
+  height: 30px;
   justify-content: space-around;
   text-align: center;
   background-color: #616161;
@@ -508,7 +507,7 @@ padding-left: 0
     justify-content: space-around;
     min-height: 50%;
     margin: 0;
-    font-size: 80%;
+    font-size: 85%;
     list-style: none;
   }
 
@@ -532,6 +531,7 @@ padding-left: 0
 
 .submenu__title {padding: 5% 0 5% 0}
 
+
 /* MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE   MENU MOBILE  */
 
 
@@ -546,16 +546,15 @@ padding-left: 0
 .content {display: none}
 .contentMobile {display: block; flex: 1 0 auto;}
 
-.shapka_iphone11Mobile {width: 100%; display: inline-block; padding-bottom: 0%; height: 2%; background-color: white; color: #111111; z-index: 3;}
+.shapka_iphone11Mobile {width: 100%; display: inline-block; padding: 15px 0 15px 0; height: auto; background-color: white; color: #111111; z-index: 99999999;}
 
-.label_in_shapkaMobile {padding: 2% 0 0 9%; display: inline-block; color: #111111; font-weight: 600; font-size: 130%; z-index: 3;}
-
+.label_in_shapkaMobile {padding: 0 0 0 9%; display: block; color: #111111; font-weight: 600; font-size: 130%; z-index: 999999999999;}
 
 
 .free_shippingMobile {
 
   transform: translateY(-100%);
-  transition: 0.7s linear;
+  transition: 0.5s linear;
   background-color: #0070C9;
   margin: 0 0 0% 0;
   width: 100%;
@@ -579,7 +578,7 @@ padding-left: 0
 
 
 .imageIphone11Mobile {padding: 0% 0 0% 0%; }
-.buyOptionsMobile {margin-bottom: 0%} /*костыль для того чтобы был отступ снизу от блока с опциями, потом надо исправить*/
+.buyOptionsMobile {margin-bottom: 0%; width: 90%;}
 
 .imgIphone11AllColorsMobile {width: 100%; height: 50%}
 .imgIphone11WhiteMobile {display: none; width: 100%; height: 50%}
@@ -591,7 +590,7 @@ padding-left: 0
 
 
 .wrapperSelectModelMobile {margin: 5% 0 0 5%}
-.wrapperBuyIphoneMobile {margin: 10% 0 0 5%}
+.wrapperBuyIphoneMobile {margin: 10% 0 0 30px}
 .buyIphoneHeadMobile {padding: 0; margin: 0;}
 .buyIphoneLabelMobile {font-size: 30px; font-weight: 600; padding: 10% 0 0 5%; display: block}
 
@@ -628,8 +627,8 @@ padding-left: 0
 
 
 
-.wrapForBlockPriceMobile {background-color: #e7e7e7; width: 50%; height: 100%; margin-top: 5%; padding: 30px 20% 30px 20% }
-.BlockWithPriceMobile {height: 100%;}
+.wrapForBlockPriceMobile {background-color: #e7e7e7; width: 50%; height: 100%; margin-top: 5%; padding: 40px 85px 40px 45px }
+.BlockWithPriceMobile {height: 100%; width: 170px;}
 .buttonAddToBasketMobile {border-radius: 5px; background-color: #0f7bd1; width: 100%; padding: 4px 15px}
 .buttonAddToBasketMobile:hover {cursor: pointer;}
 .labelAddToBasket {color: #f1ffff; font-size: 17px;}
@@ -672,7 +671,7 @@ padding-left: 0
 
 .footer {display: none}
 
-.footer-mobile {background-color: #e4e4e4; height: auto; flex: 0 0 auto; padding: 5% 6% 10% 6%; margin-top: 5px; display: block}
+.footer-mobile {background-color: #e4e4e4; height: auto; flex: 0 0 auto; padding: 10% 6% 10% 6%; margin-top: 15px; display: block}
 .footer-mobile__wrap {display: flex; flex-direction: column;}
 
 .footer-mobile__column {visibility: hidden; height:0; overflow: hidden; opacity: 0; transition: all 0.5s linear;}
@@ -700,6 +699,14 @@ padding-left: 0
 
 
 .footer-mobile__row {display: flex; flex-direction: column;}
+
+.footer-row__link:visited {
+  color: #515154;
+}
+
+.footer-row__link:link {
+  color: #515154;
+}
 
 /* FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE    */
 }
