@@ -311,16 +311,10 @@ padding-left: 0
 .june22 {font-size: 250%; font-weight: 600;}
 .label-wwdc-description {font-size: 130%;}
 .wwdc-img {width: 50%; height: 70%;}
+.wwdc__apple-logo {width: auto; height: 40px;}
+.wwdc__arrow-img { height: 20px;}
 .wwdc-detailed {padding-right: 5px;}
 .block-links__wwdc {color: #2997FF; font-size: 21px; text-decoration: none;}
-.block-links__wwdc:after {
-  content: '';
-  vertical-align: middle;
-  display: inline-block;
-  text-align: justify;
-  height: 40px;
-  margin-left: 12px;
-}
 
 
 
@@ -740,6 +734,16 @@ padding-left: 0
 
 
 .footer-mobile__row {display: flex; flex-direction: column;}
+
+
+.footer-row__link:visited {
+  color: #515154;
+}
+
+.footer-row__link:link {
+  color: #515154;
+}
+
 
 /* FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE   FOOTER MOBILE    */
 

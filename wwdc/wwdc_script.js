@@ -1,7 +1,7 @@
 "use strict";
 
 const headerButton = document.querySelector('.header__button');
-const header = document.querySelector('.header-mobile');
+const header = document.querySelector('.headerMobile');
 const menuMobile = document.querySelector('.menu-mobile-block');
 const contentWrap = document.querySelector('.content-wrap');
 const footer = document.querySelector('.footer-wrap');

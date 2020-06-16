@@ -211,13 +211,13 @@ padding-left: 0
 
 .contentGrid {display: grid; grid-template-columns: 50% 50%}
 
-.imageIphoneSE {padding: 0% 0 0% 0%;}
+.imageIphoneSE {padding: 0% 0 0% 0%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .buyOptions {margin-bottom: 0%} /*костыль для того чтобы был отступ снизу от блока с опциями, потом надо исправить*/
 
-.imgIphoneSEAllColors {width: 100%; height: 750px; padding-left: 5%;}
-.imgIphoneSEWhite {display: none; width: 100%; height: 80%; padding-left: 5%;}
-.imgIphoneSEBlack {display: none; width: 100%; height: 80%; padding-left: 5%;}
-.imgIphoneSERed {display: none; width: 100%; height: 80%; padding-left: 5%;}
+.imgIphoneSEAllColors {width: 100%; height: 100%;}
+.imgIphoneSEWhite {display: none; width: 100%; height: 80%;}
+.imgIphoneSEBlack {display: none; width: 100%; height: 80%;}
+.imgIphoneSERed {display: none; width: 100%; height: 80%;}
 
 .wrapperBuyIphone {}
 .buyIphoneHead {padding-top: 10%}
@@ -259,7 +259,7 @@ padding-left: 0
 .labelAddToBasket {color: #f1ffff; font-size: 17px;}
 .resultUnderOptions {font-weight: 600%; font-size: 150%}
 
-.blockUnderPhoto {padding: 30px 0 0px 20%; display: grid; grid-template-columns: 50% 50%; width: 70%;}
+.blockUnderPhoto {display: grid; grid-template-columns: 50% 50%; width: 70%;}
 .labelFastAndFreeShipping {font-size: 12px; font-weight: 600; text-align: center; margin: 1% 0 0 0}
 
 .chatWithSpecialist {padding: 30px 0 30px 10%; display: grid; grid-template-columns: 25% 75%; width: 100%;}
@@ -278,9 +278,9 @@ padding-left: 0
 
 .slide {width: 100%}
 
-.blockColorUnavailable {background-color: #f2f2f2; z-index: 99999999999; opacity: 0.3; padding: 10% 10% 10% 10%; width: inherit; border-radius: 20px; padding: 0 0 0 1%}
-.blockMemoryUnavailable {background-color: #f2f2f2; z-index: 99999999999; opacity: 0.3; padding: 10% 10% 10% 10%; width: inherit; border-radius: 20px; padding: 0 0 0 2%}
-.blockCartUnavailable {background-color: #f2f2f2; z-index: 99999999999; opacity: 0.3; padding: 10% 10% 10% 10%; width: inherit; border-radius: 20px; padding: 0 0 0 2%}
+.blockColorUnavailable {background-color: #f2f2f2; z-index: 99999999999; opacity: 0.3; width: inherit; border-radius: 20px; padding: 0 0 0 0%}
+.blockMemoryUnavailable {background-color: #f2f2f2; z-index: 99999999999; opacity: 0.3; width: inherit; border-radius: 20px; padding: 0 0 0 0%}
+.blockCartUnavailable {background-color: #f2f2f2; z-index: 99999999999; opacity: 0.3; width: inherit; border-radius: 20px; padding: 0 0 0 0%}
 /*  КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ       КОНТЕНТ  */
 
 
