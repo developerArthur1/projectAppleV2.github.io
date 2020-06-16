@@ -725,7 +725,7 @@ ul {
 /* AppStore     AppStore     AppStore     AppStore     AppStore     AppStore     */
 
 .app-store {display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #E0ECF6; margin: 20px 0 12px 0; padding: 20px 0;}
-.app-store__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 20px 0; text-align: center;}
+.app-store__description-block {display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 20px 0; text-align: center; width: 90%;}
 .app-store__description {color: #333339; font-size: 20px; font-weight: 600;}
 .app-store__link {text-decoration: none; color: #0070c9; font-weight: 400; margin-bottom: 10px;}
 .app-store__link:after {
